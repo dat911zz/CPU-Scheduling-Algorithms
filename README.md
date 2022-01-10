@@ -11,14 +11,15 @@ Bao gồm các thuật toán sau:
 
 
 ## Các hình ảnh minh họa cho chương trình
-<p align="center">
-    <img src="https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/FCFS.jpg" alt="Image" width="800" height="600" />
-    <img src="https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/SJF_nonPr.jpg" alt="Image" width="800" height="600" />
-    <img src="https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/SJF_pr.jpg" alt="Image" width="800" height="600" />
-    <img src="https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/Priority_nonPr.jpg" alt="Image" width="800" height="600" />
-    <img src="https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/Priority_pr.jpg" alt="Image" width="800" height="600" />
-    <img src="https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/RR.jpg" alt="Image" width="800" height="600" />
-</p>
+
+![image 1](https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/FCFS.jpg) </br>
+![image 2](https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/SJF_nonPr.jpg) </br>
+![image 3](https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/SJF_pr.jpg) </br>
+![image 4](https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/Priority_nonPr.jpg) </br>
+![image 5](https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/Priority_pr.jpg) </br>
+![image 6](https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/RR.jpg) </br>
 
 ## Contributing
 - Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
