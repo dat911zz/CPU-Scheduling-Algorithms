@@ -19,5 +19,6 @@ Bao gồm các thuật toán sau:
     <img src="https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/Priority_pr.jpg" alt="Image" width="800" height="600" />
     <img src="https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/RR.jpg" alt="Image" width="800" height="600" />
 </p>
+
 ## Contributing
 - Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
