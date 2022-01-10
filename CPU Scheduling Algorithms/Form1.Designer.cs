@@ -30,8 +30,9 @@ namespace CPU_Scheduling_Algorithms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.txtConsole = new System.Windows.Forms.TextBox();
             this.CountTime = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,10 +61,15 @@ namespace CPU_Scheduling_Algorithms
             this.panel2 = new System.Windows.Forms.Panel();
             this.Algorithm = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.qInput = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.RRPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qInput)).BeginInit();
+            this.RRPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtConsole
@@ -146,7 +152,7 @@ namespace CPU_Scheduling_Algorithms
             // 
             // deleteBtn
             // 
-            this.deleteBtn.Location = new System.Drawing.Point(681, 113);
+            this.deleteBtn.Location = new System.Drawing.Point(768, 115);
             this.deleteBtn.Margin = new System.Windows.Forms.Padding(4);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(84, 42);
@@ -157,7 +163,7 @@ namespace CPU_Scheduling_Algorithms
             // 
             // addBtn
             // 
-            this.addBtn.Location = new System.Drawing.Point(681, 65);
+            this.addBtn.Location = new System.Drawing.Point(768, 68);
             this.addBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(84, 42);
@@ -168,33 +174,33 @@ namespace CPU_Scheduling_Algorithms
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.stt,
             this.CotThoiGianDen,
             this.CotThoiGianXuLy});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(286, 68);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(387, 216);
+            this.dataGridView1.Size = new System.Drawing.Size(474, 216);
             this.dataGridView1.TabIndex = 19;
             // 
             // stt
@@ -228,14 +234,14 @@ namespace CPU_Scheduling_Algorithms
             this.panel1.Location = new System.Drawing.Point(116, 113);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(163, 86);
+            this.panel1.Size = new System.Drawing.Size(163, 76);
             this.panel1.TabIndex = 21;
             // 
             // PreemptiveBtn
             // 
             this.PreemptiveBtn.AutoSize = true;
             this.PreemptiveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PreemptiveBtn.Location = new System.Drawing.Point(8, 44);
+            this.PreemptiveBtn.Location = new System.Drawing.Point(17, 40);
             this.PreemptiveBtn.Margin = new System.Windows.Forms.Padding(4);
             this.PreemptiveBtn.Name = "PreemptiveBtn";
             this.PreemptiveBtn.Size = new System.Drawing.Size(133, 20);
@@ -247,7 +253,7 @@ namespace CPU_Scheduling_Algorithms
             // 
             this.NonPreemptiveBtn.AutoSize = true;
             this.NonPreemptiveBtn.Checked = true;
-            this.NonPreemptiveBtn.Location = new System.Drawing.Point(8, 18);
+            this.NonPreemptiveBtn.Location = new System.Drawing.Point(17, 14);
             this.NonPreemptiveBtn.Margin = new System.Windows.Forms.Padding(4);
             this.NonPreemptiveBtn.Name = "NonPreemptiveBtn";
             this.NonPreemptiveBtn.Size = new System.Drawing.Size(97, 21);
@@ -270,7 +276,7 @@ namespace CPU_Scheduling_Algorithms
             // 
             // RunBtn
             // 
-            this.RunBtn.Location = new System.Drawing.Point(681, 231);
+            this.RunBtn.Location = new System.Drawing.Point(768, 231);
             this.RunBtn.Margin = new System.Windows.Forms.Padding(4);
             this.RunBtn.Name = "RunBtn";
             this.RunBtn.Size = new System.Drawing.Size(84, 52);
@@ -324,28 +330,28 @@ namespace CPU_Scheduling_Algorithms
             // 
             this.FCFS_menu.DoubleClickEnabled = true;
             this.FCFS_menu.Name = "FCFS_menu";
-            this.FCFS_menu.Size = new System.Drawing.Size(224, 28);
+            this.FCFS_menu.Size = new System.Drawing.Size(193, 28);
             this.FCFS_menu.Text = "FCFS";
             this.FCFS_menu.Click += new System.EventHandler(this.FCFS_menu_Click);
             // 
             // SJF_menu
             // 
             this.SJF_menu.Name = "SJF_menu";
-            this.SJF_menu.Size = new System.Drawing.Size(224, 28);
+            this.SJF_menu.Size = new System.Drawing.Size(193, 28);
             this.SJF_menu.Text = "SJF";
             this.SJF_menu.Click += new System.EventHandler(this.SJF_menu_Click);
             // 
             // Priority_menu
             // 
             this.Priority_menu.Name = "Priority_menu";
-            this.Priority_menu.Size = new System.Drawing.Size(224, 28);
+            this.Priority_menu.Size = new System.Drawing.Size(193, 28);
             this.Priority_menu.Text = "Priority";
             this.Priority_menu.Click += new System.EventHandler(this.Priority_menu_Click);
             // 
             // RR_menu
             // 
             this.RR_menu.Name = "RR_menu";
-            this.RR_menu.Size = new System.Drawing.Size(224, 28);
+            this.RR_menu.Size = new System.Drawing.Size(193, 28);
             this.RR_menu.Text = "Round Robin";
             this.RR_menu.Click += new System.EventHandler(this.RR_menu_Click);
             // 
@@ -379,6 +385,33 @@ namespace CPU_Scheduling_Algorithms
             this.Algorithm.TabIndex = 0;
             this.Algorithm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // qInput
+            // 
+            this.qInput.Location = new System.Drawing.Point(80, 2);
+            this.qInput.Name = "qInput";
+            this.qInput.Size = new System.Drawing.Size(83, 23);
+            this.qInput.TabIndex = 35;
+            this.qInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(4, 4);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 17);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Quantum";
+            // 
+            // RRPanel
+            // 
+            this.RRPanel.Controls.Add(this.qInput);
+            this.RRPanel.Controls.Add(this.label5);
+            this.RRPanel.Location = new System.Drawing.Point(116, 192);
+            this.RRPanel.Name = "RRPanel";
+            this.RRPanel.Size = new System.Drawing.Size(164, 32);
+            this.RRPanel.TabIndex = 37;
+            this.RRPanel.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -399,11 +432,13 @@ namespace CPU_Scheduling_Algorithms
             this.Controls.Add(this.label4);
             this.Controls.Add(this.RunBtn);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.RRPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Nhóm Đảng Viên";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -412,6 +447,9 @@ namespace CPU_Scheduling_Algorithms
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qInput)).EndInit();
+            this.RRPanel.ResumeLayout(false);
+            this.RRPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,6 +485,9 @@ namespace CPU_Scheduling_Algorithms
         private System.Windows.Forms.DataGridViewTextBoxColumn CotThoiGianXuLy;
         private System.Windows.Forms.ToolStripMenuItem chọnThuậtToánTạiĐâyToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.NumericUpDown qInput;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel RRPanel;
     }
 }
 
