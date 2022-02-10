@@ -23,3 +23,7 @@ Bao gồm các thuật toán sau:
 - Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+----
+![Count](https://komarev.com/ghpvc/?username=dat911zz)
