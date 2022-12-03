@@ -20,7 +20,7 @@ Bao gồm các thuật toán sau:
 ![image 6](https://github.com/dat911zz/CPU-Scheduling-Algorithms/blob/master/Pics/RR.jpg) </br>
 
 ## Contributing
-- Mọi đóng góp để phát triển source code đều dc chào đón. Để thực hiện các thay đổi code, bạn hãy tạo 1 Issue để thảo luận về điều bạn muốn thay đổi trong project này
+- Mọi đóng góp để phát triển source code đều dc chào đón. Để thực hiện các thay đổi code, hãy tạo 1 Issue để thảo luận về điều bạn muốn thay đổi trong project này
 - Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
